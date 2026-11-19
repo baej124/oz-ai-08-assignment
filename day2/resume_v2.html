@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>자기소개서</title>
@@ -9,27 +9,29 @@
   <hr>
   <img src="profile.jpg" alt="Profile Picture" style="width: 200px; height: 200px;">
   <p>나는 배지연입니다.</p>
-  <a href="https://github.com/baej124">내 깃허브 바로가기</a>
-  <ul style="list-style: square">
+  <a href="https://github.com/baej124" target="_blank" rel="noopener noreferrer">내 깃허브 바로가기</a>
+  <ul style="list-style: square;">
       <li>이름: 배지연</li>
       <li>나이: 24살(2026년 기준)</li>
       <li>출생년도: 2003년</li>
       <li>성별: 여자</li>
       <li>거주지: 충남 서산시</li>
   </ul>
-  <h1>Hobby & Preference</h1>
+
+  <h2>Hobby & Preference</h2>
   <hr>
   <ol type="i">
     <li>취미: 뮤지컬 관람, 오토바이, 사격, 드라마 시청</li>
-    <li>좋아하는 음식: 부대찌개, 낙곱새, 블루 레몬 에이드</l1>
+    <li>좋아하는 음식: 부대찌개, 낙곱새, 블루 레몬 에이드</li>
     <li>좋아하는 영화: 디즈니 영화, 명탐정 코난, 어벤저스, 포드v페라리</li>
     <li>좋아하는 뮤지컬: 데스노트, 빨래, 드라큘라, 시카고</li>
     <li>좋아하는 오토바이: 가와사키 닌자H2R, 혼다 650r, 두카티 파니갈레v4s</li>
     <li>좋아하는 노래 장르: 힙합, 발라드, Rap, Kpop</li>
   </ol>
-  <h1>Career & Work Experience</h1>
+
+  <h2>Career & Work Experience</h2>
   <hr>
-  <table style="table-layout: auto" border="1">
+  <table style="table-layout: auto;" border="1">
     <thead>
       <tr>
         <th>회사명</th>
@@ -45,14 +47,15 @@
       </tr>
     </tbody>
   </table>
-  <h1>Send Cover Letter</h1>
+
+  <h2>Send Cover Letter</h2>
   <hr>
-  <form action="" style="display: flex; gap: 10px;">
+  <form action="" style="display: flex; gap: 10px; align-items: center;">
     <label for="emailInput">담당자 이메일: </label>
-    <input id="emailInput" type="email" placeholder="email@example.com">
+    <input id="emailInput" type="email" placeholder="email@example.com" required>
     <label for="companyInput">회사명: </label>
-    <input id="companyInput" type="text" placeholder="(주)Paper Company">
-    <button>이력서 전송하기</button>
+    <input id="companyInput" type="text" placeholder="(주)Paper Company" required>
+    <button type="submit">이력서 전송하기</button>
   </form>
 </body>
 </html>

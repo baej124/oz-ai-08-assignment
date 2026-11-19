@@ -8,37 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <nav class="sidebar">
+  <nav class="sidebar" aria-label="주요 메뉴">
     <div class="sidebar-container">
       <ul class="sidebar-menu">
         <li><a href="#resume">이력서</a></li>
         <li><a href="#portfolio">포트폴리오</a></li>
-        <li><a href="#">PDF 내려받기</a></li>
+        <li><a href="#" onclick="window.print(); return false;">PDF 내려받기</a></li>
       </ul>
     </div>
   </nav>
+
   <div id="resume" class="container">
     <main>
-        <section id="resume-header">
+        <header id="resume-header">
           <div class="header-content">
             <div class="header-text">
                 <h1>Bae Ji Yeon</h1>
                 <span>
-                    <i class="fa-solid fa-mobile-screen"></i>&nbsp;010-9902-5608
+                    <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>&nbsp;010-9902-5608
                 </span>
                 <span>
-                    <i class="fa-solid fa-at"></i>&nbsp;baej23017@gmail.com
+                    <i class="fa-solid fa-at" aria-hidden="true"></i>&nbsp;baej23017@gmail.com
                 </span>
                 <span>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/baej124/ai-08">배지연's Github</a>
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/baej124/ai-08" target="_blank" rel="noopener noreferrer">배지연's Github</a>
                 </span>
             </div>
             <div class="profile-photo">
-                <img src="profile.jpg" alt="Profile Picture">
+                <img src="profile.jpg" alt="배지연 프로필 사진">
             </div>
           </div>
-        </section>
+        </header>
 
         <section id="introduce">
             <p>
@@ -46,23 +47,29 @@
             </p>
         </section>
 
-        <h2>Skills</h2>
-        <div class="skills-group">
-            <h3>Language</h3>
-            <div class="skills-container">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">TypeScript</span>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-group">
+                <h3>Language</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">TypeScript</span>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h2>Education</h2>
-        <table class="education-table">
-            <tr>
-                <th>2024~2027</th>
-                <td>고려사이버대학교 (AI데이터과학 전공)</td>
-            </tr>
-        </table>
+        <section id="education">
+            <h2>Education</h2>
+            <table class="education-table">
+                <tbody>
+                    <tr>
+                        <th scope="row">2024~2027</th>
+                        <td>고려사이버대학교 (AI데이터과학 전공)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
   </div>
 </body>
