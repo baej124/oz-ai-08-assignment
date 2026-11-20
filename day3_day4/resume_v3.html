@@ -2,74 +2,175 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배지연의 이력서</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <nav class="sidebar" aria-label="주요 메뉴">
+  <nav class="sidebar">
     <div class="sidebar-container">
       <ul class="sidebar-menu">
         <li><a href="#resume">이력서</a></li>
         <li><a href="#portfolio">포트폴리오</a></li>
-        <li><a href="#" onclick="window.print(); return false;">PDF 내려받기</a></li>
+        <li><a href="#">PDF 내려받기</a></li>
       </ul>
     </div>
   </nav>
-
   <div id="resume" class="container">
     <main>
-        <header id="resume-header">
+        <section id="resume-header">
           <div class="header-content">
             <div class="header-text">
-                <h1>Bae Ji Yeon</h1>
-                <span>
-                    <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>&nbsp;010-9902-5608
-                </span>
-                <span>
-                    <i class="fa-solid fa-at" aria-hidden="true"></i>&nbsp;baej23017@gmail.com
-                </span>
-                <span>
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    <a href="https://github.com/baej124/ai-08" target="_blank" rel="noopener noreferrer">배지연's Github</a>
-                </span>
+              <h1>Self Introducation</h1>
+              <span>
+                <i class="fa-solid fa-mobile-screen"></i>&nbsp;010-9902-5608
+              </span>
+              <span>
+                <i class="fa-solid fa-at"></i>&nbsp;baej20317@gmail.com
+              </span>
+              <span>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/baej124">배지연's Github</a>
+              </span>
             </div>
-            <div class="profile-photo">
-                <img src="profile.jpg" alt="배지연 프로필 사진">
+            <div class="profile-image">
+              <img src="./profile.jpg" alt="profile.jpg">
             </div>
           </div>
-        </header>
-
-        <section id="introduce">
-            <p>
-                안녕하세요! 저는 배지연입니다. 개발자로 성장하고 있는 중입니다. 새로운 기술을 배우는 것에 관심이 많아요.
-            </p>
         </section>
+    
+        </a>
+  <ul style="list-style: square;">
+      <li>이름: 배지연</li>
+      <li>나이: 24살</li>
+      <li>출생년도: 2003년</li>
+      <li>성별: 여자</li>
+      <li>거주지: 충남 서산시</li>
+  </ul>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-group">
-                <h3>Language</h3>
-                <div class="skills-container">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">TypeScript</span>
-                </div>
+    <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-group">
+        <h3>Language</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Frameworks &amp; Libraries</h3>
+        <div class="skills-container">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Scikit-learn</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Tools &amp; DevOps</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+        </div>
+    </div>
+</section>
+            <h2>Experience</h2>
+        <div class="experience-item">
+            <div class="experience-info">
+                <span class="company"></span>
+                <span class="period"></span>
             </div>
-        </section>
+            <div class="role">
+                <span class="position"></span>
+                <span class="rank"></span>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-name"></span>
+                    <span class="project-period"></span>
+                </div>
+                <ul class="details">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-name"></span>
+                    <span class="project-period"></span>
+                </div>
+                <ul class="details">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-info">
+                <span class="company"></span>
+                <span class="period"></span>
+            </div>
+            <div class="role">
+                <span class="position"></span>
+                <span class="rank"></span>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-name"></span>
+                    <span class="project-period"></span>
+                </div>
+                <ul class="details">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <table class="education-table">
-                <tbody>
-                    <tr>
-                        <th scope="row">2024~2027</th>
-                        <td>고려사이버대학교 (AI데이터과학 전공)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <h2>Education</h2>
+        <table class="education-table">
+            <tr>
+                <tr>2022 ~ 2024</th>
+                <br>한서대학교 (시각디자인 전공)</br>
+                <tr>2024 ~ 2027</th>
+                <br>고려사이버대학교(편입) (AI데이터과학 전공)</br>
+            </tr>
+        </table>
+
+        <h2>Awards</h2>
+        <table class="education-table">
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+        </table>
+
+
+       <h2>Certifications</h2>
+        <table class="education-table">
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+        </table>
     </main>
   </div>
 </body>
