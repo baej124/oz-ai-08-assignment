@@ -302,19 +302,4 @@ main h2 {
 }
 
 
-@media print {
-    .sidebar { display: none; }
-    body { padding: 0; background: #fff; }
-    .container { box-shadow: none; margin: 0; max-width: none; padding: 20px; }
-    .skill-tag:hover { transform: none; }
-}
 
-@media (max-width: 768px) {
-    body { padding: 0; }
-    .sidebar { position: static; width: 100%; height: auto; padding: 15px 0; }
-    .sidebar-menu { flex-direction: row; justify-content: center; }
-    .container { margin: 0; padding: 24px; border-radius: 0; }
-    .header-content { flex-direction: column-reverse; align-items: flex-start; }
-    .info-list { grid-template-columns: 1fr; }
-    .experience-info { flex-direction: column; gap: 0; }
-}

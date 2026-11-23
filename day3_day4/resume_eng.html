@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bae Ji-yeon’s Resume</title>
+    <link rel="stylesheet" href="resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-container">
+      <ul class="sidebar-menu">
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#" onclick="window.print(); return false;">Download PDF</a></li>
+        <li><a href="./resume_v3.html" id="ko_resume">Korean resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="resume" class="container">
+    <main>
+      <section id="resume-header">
+        <div class="header-content">
+          <div class="header-text">
+            <h1>Self Introduction</h1>
+            <span>
+              <i class="fa-solid fa-mobile-screen"></i>010-9902-5608
+            </span>
+            <span>
+              <i class="fa-solid fa-at"></i>baej20317@gmail.com
+            </span>
+            <span>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/baej124" target="_blank">Bae Ji-Yeon's Github</a>
+            </span>
+          </div>
+          <div class="profile-image">
+            <img src="./profile.jpg" alt="profile-image">
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="profile-info">
+        <h2>Profile</h2>
+        <ul class="info-list">
+          <li><span class="label">Name</span>Bae Ji-Yeon</li>
+          <li><span class="label">Age</span>24years old</li>
+          <li><span class="label">Dath of Birth</span>October 22 2003</li>
+          <li><span class="label">Gender</span>female</li>
+          <li><span class="label">Place of Residence</span>Chungcheongnam-do Seosan-si</li>
+        </ul>
+      </section>
+
+      
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-group">
+          <h3>Language</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skills-container">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Tools &amp; DevOps</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">Medication Duplication Alert Service for Inpatients</span>
+      <span class="period">2026.10.26 ~ 2026.11.12</span>
+    </div>
+    <div class="role">
+      <span class="position">6-member team for the AI ​​Healthcare course at OZ Coding School</span>
+      <span class="rank">Team Leader</span>
+    </div>
+    <ul class="details">
+      <li>Planning and development of a service to warn and advise hospitalized patients about the risks of redundant medication use</li>
+      <li>Assigning roles to team members and managing project schedules as a team leader</li>
+      <li>Presentation of team analysis results and preparation of a document outlining service improvements</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">Technologies Used</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">FastAPI</span>
+      <span class="skill-tag">SQLite</span>
+    </div>
+  </div>
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">Predictive Modeling Based on Infertility Data</span>
+      <span class="period">2026.10.14 ~ 2026.10.20</span>
+    </div>
+    <div class="role">
+      <span class="position">4-member team for the AI ​​Healthcare course at OZ Coding School</span>
+      <span class="rank">Responsible for model tuning and ensembling</span>
+    </div>
+    <ul class="details">
+      <li>Hyperparameter Tuning with Optuna</li>
+      <li>Constructing Voting and Stacking Ensemble Models</li>
+      <li>Generation of prediction probabilities for test data and final verification of the submission format</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">Technologies Used</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">Optuna</span>
+      <span class="skill-tag">Ensemble</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">Analysis of Differences in Health Indicators Based on Smoking Status</span>
+      <span class="period">2026.09.14 ~ 2026.09.16</span>
+    </div>
+    <div class="role">
+      <span class="position">4-member team for the AI ​​Healthcare course at OZ Coding School</span>
+      <span class="rank">In charge of analysis and reports</span>
+    </div>
+    <ul class="details">
+      <li>Analyzing the relationship between smoking and pulse pressure using OLS regression with age controlled for</li>
+      <li>Consolidating team member feedback and finalizing the report</li>
+      <li>Organizing and documenting analysis code, and drawing comprehensive conclusions</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">Technologies Used</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">OLS Regression</span>
+      <span class="skill-tag">Hypothesis Testing</span>
+    </div>
+  </div>
+</section>
+
+    
+      <section id="education">
+        <h2>Education</h2>
+        <table class="education-table">
+          <tr>
+            <th>2022 ~ 2024</th>
+            <td>Hanseo University (Visual Design Major)</td>
+          </tr>
+          <tr>
+            <th>2024 ~ 2027</th>
+            <td>Korea Cyber ​​University (Major in AI & Data Science, Transfer Admission)</td>
+          </tr>
+          <tr>
+            <th>2026 ~ 2027</th>
+            <td>OZ Coding School AI Healthcare Bootcamp Program</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- 내용이 생기면 주석을 풀어서 사용할 예정-->
+      <section id="awards">
+        <h2>Awards</h2>
+        <table class="education-table">
+          <tr>
+            <th>date</th>
+            <td>Awards Name</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <table class="education-table">
+          <tr>
+            <th>date</th>
+            <td>Certification Name</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
