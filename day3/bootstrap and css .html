@@ -1,0 +1,128 @@
+
+부트스트랩이란 무엇인가?
+-> CSS & Javascript UI 프레임워크
+-> 반응형 웹을 빠르게 만들기 위한 도구
+-> 미리 정의된 Grid, Component, Utility class 제공 (클래스 이름만으로 레이아웃 구성)
+-> 일정한 UI 품질 유지
+즉 CSS를 직접 만들지 않아도 된다.
+
+127.0.0.1 = local host  인터넷 ip 주소 
+
+개발 서버 포트
+: 8000
+: 8080
+
+fast forward merge = 같은 흐름으로 진행된 커밋일 때 한 번에 따라잡는 것
+three way merge = 분기가 생겨서 따라잡기가 안되는 경우 병합 커밋을 만들어 따라잡는 것
+
+git remote add 저장소닉네임 = 원격저장소 등록 
+
+git pull : 원격 -> 로컬 다운로드 (변경된 커밋을 가져옴)(fetch+merge)
+git push : 로컬 -> 원격 업로드
+git clone : 원격 -> 로컬 다운로드 (아무것도 없는 상태에서 전체 코드 동기화)
+git fork : 타인의 원격 -> 내 원격으로 카피
+
+웹 브라우저 역할
+- 사용자를 대신해 HTTP 요청(GET)
+- HTML 렌더링 
+
+HTML 은 줄바꿈도 태그로 설정 <br> 적으면 줄바꿈 가능 
+
+<p>Hello, HTML!</p> 같은 방식으로도 가능 Hello, HTML! 부분은 다른 내용으로 변경 가능한데 이런 방식은 각각을 한 문단으로 나눠버리는 것
+
+<h1> 에서 <h6> 까지 헤딩태그 존재
+
+속성을 넣을 수 있는 태그가 있고 아닌 태그가 있다
+
+alt = "pizza"라고 적어주면, 혹시나 src 가 잘못되었을 때 대체 택스트로 이 사진이 무엇인지 알려준다
+
+form : 데이터를 입력받는 HTML 태그(요소) -> 쿼리 파라미터 
+
+
+```html
+``` 
+
+ln -s  ~/긴 주소  ~/원하는 주소= 심볼릭 링크 = 바로가기 같은 느낌 
+
+label for="query"
+input id="query"
+이렇게 하면 검색창에 노란색 박스가 쳐지면서 바로 검색어를 입력 가능
+
+결합자(관계) 셀렉터
+● 자손 선택자: div p
+○ div 안에 있는 모든 p(깊이 상관없음 )
+● 자식 선택자: div > p
+○ div의 바로 아래 자식 p만
+● 인접 형제: div + p
+○ div 바로 다음에 오는 p 하나
+● 일반 형제: div ~ p
+○ div 뒤에 오는 모든 형제 p
+
+selector 우선순위
+● !important
+● inline style (style="")
+● id 선택자 (#id)
+● class / 속성 / pseudo-class (.class, [type], :hover)
+● 태그 선택자 (div, p)
+● * (전체 선택자)
+id > class > tag, 같으면 나중 코드 승리
+
+Icon 추가(fontawesome)
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+/>
+
+Inline vs. Block-level
+화면에서 공간을 차지하는 방식에 따라 Inline 요소와 Block-level 요소로 구분
+● Inline: 내용만큼만 공간을 차지하며 같은 줄에 나란히 배치
+○ <span>, <a>, <strong>, <em>
+● Block-level: 한 줄 전체를 차지하며 항상 새 줄에서 시작
+○ <div>, <p>, <h1> ~ <h6>, <section>, <article>
+
+display 속성
+요소의 기본 성질을 바꿀 수 있음
+● display: inline
+● display: inline-block
+● display: block
+<div style="background-color: skyblue;">Block1</div>
+<div style="display: inline; width: 100px; background-color: orange;">Inline1</div>
+<div style="display: inline-block; width: 100px; background-color: orange;">Inline2</div>
+<div style="background-color: skyblue;">Block2</div>
+
+● margin, padding: 박스 바깥·안쪽 여백
+● box-sizing: 박스 크기를 계산하는 기준
+● Inline / Block: 박스가 차지하는 기본 배치 방식
+
+
+Flexbox(Flexible Box Layout)
+여러 박스를 한 방향으로 유연하게 배치하기 위한 레이아웃 시스템
+→ Normal Flow를 벗어나 의도적으로 배치
+특징
+● 1차원 레이아웃 (가로 또는 세로)
+● 부모가 자식의 배치와 정렬을 제어
+● 정렬과 간격 설정이 직관적
+
+Flexbox(Flexible Box Layout)
+display: flex로 설정하면 , 부모는 flex container, 자식은 flex item이 됨
+
+(#box$)*2 = div 박스 2개 생성
+
+position: 해당객체만 움직이고 싶을때, margin: 다른 객체도 같이 이동시킬때 이용
+margin 조정: 주변 요소의 재배치가 발생할 수 있음 vs. position: 이동 자체로는 주변 요소의 재배치가 발생하지 않음
+
+. = class 단축
+# = div 단축
+
+div는 block level 요소, div가 박스레벨이고 노멀플로우를 따른다
+
+양팔간격 나란히 띄우기 =  justify-content: space-around;
+일괄적으로 사이를 띄우고 정렬 = gap: 10px;
+
+flexbox = 한 방향으로 여러 요소들을 배치
+
+span은 inline level태그라서 자동으로 쭉 이어져서 작성된다.
+
+rem : 화면 크기에 비례하게 사이즈를 알아서 조절해준다
+
+상-하위 관계를 표시할때는 __(언더바 두개)로 표현할 수 있다
