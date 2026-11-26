@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배지연의 이력서</title>
+    <link rel="stylesheet" href="resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="mobile-bar">
+      <span class="mobile-title">배지연</span>
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="sidebar-container">
+      <ul class="sidebar-menu">
+        <li><a href="./resume_eng.html" id="english">AI 영문 포트폴리오</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="./index.html" id="korean">Another Side, 배우 포트폴리오</a></li>
+        <li><a href="#" onclick="window.print(); return false;">PDF 내려받기</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="resume" class="container">
+    <main>
+      <section id="resume-header">
+        <div class="header-content">
+          <div class="header-text">
+            <h1>Self Introduction</h1>
+            <span>
+              <i class="fa-solid fa-mobile-screen"></i>010-1234-5678
+            </span>
+            <span>
+              <i class="fa-solid fa-at"></i>example@gmail.com
+            </span>
+            <span>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/baej124" target="_blank">배지연's Github</a>
+            </span>
+          </div>
+          <div class="profile-image">
+            <img src="./profile.jpg" alt="프로필 사진">
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="profile-info">
+        <h2>Profile</h2>
+        <ul class="info-list">
+          <li><span class="label">이름</span>배지연</li>
+          <li><span class="label">나이</span>24살</li>
+          <li><span class="label">출생</span>2003년 10월 22일</li>
+          <li><span class="label">성별</span>여자</li>
+          <li><span class="label">거주지</span>충남 서산시</li>
+        </ul>
+      </section>
+
+      
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-group">
+          <h3>Language</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skills-container">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Tools &amp; DevOps</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">입원환자 중복복약 경고 안내 서비스</span>
+      <span class="period">2026.10.26 ~ 2026.11.12</span>
+    </div>
+    <div class="role">
+      <span class="position">OZ코딩스쿨 AI 헬스케어 과정 · 6인팀 </span>
+      <span class="rank">팀장</span>
+    </div>
+    <ul class="details">
+      <li>입원환자에게 중복 복약 위험을 경고하고 안내하는 서비스 기획·개발</li>
+      <li>팀장으로서 팀원 역할 분담 및 프로젝트 일정 관리</li>
+      <li>팀 분석 결과 발표 및 서비스 개선안 문서 작성</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">사용 기술</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">FastAPI</span>
+      <span class="skill-tag">SQLite</span>
+    </div>
+  </div>
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">난임 데이터 기반 예측 모델링</span>
+      <span class="period">2026.10.14 ~ 2026.10.20</span>
+    </div>
+    <div class="role">
+      <span class="position">OZ코딩스쿨 AI 헬스케어 과정 · 4인 팀</span>
+      <span class="rank">모델 튜닝 · 앙상블 담당</span>
+    </div>
+    <ul class="details">
+      <li>Optuna를 활용한 하이퍼파라미터 튜닝</li>
+      <li>Voting · Stacking 앙상블 모델 구성</li>
+      <li>Test 데이터 예측 확률 생성 및 제출 포맷 최종 검증</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">사용 기술</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">Optuna</span>
+      <span class="skill-tag">Ensemble</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-info">
+      <span class="company">흡연 여부에 따른 건강 지표 차이 분석</span>
+      <span class="period">2026.09.14 ~ 2026.09.16</span>
+    </div>
+    <div class="role">
+      <span class="position">OZ코딩스쿨 AI 헬스케어 과정 · 4인 팀 </span>
+      <span class="rank">분석 · 보고서 담당</span>
+    </div>
+    <ul class="details">
+      <li>나이를 통제한 OLS 회귀분석으로 흡연과 맥압의 관계 분석</li>
+      <li>팀원 의견 취합 및 최종 보고서 정리</li>
+      <li>분석 코드 정리·문서화 및 종합 결론 도출</li>
+    </ul>
+    <div class="skills-container project-tags">
+      <span class="tags-label">사용 기술</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">OLS Regression</span>
+      <span class="skill-tag">가설 검정</span>
+    </div>
+  </div>
+</section>
+
+    
+      <section id="education">
+        <h2>Education</h2>
+        <table class="education-table">
+          <tr>
+            <th>2022 ~ 2024</th>
+            <td>한서대학교 (시각디자인 전공)</td>
+          </tr>
+          <tr>
+            <th>2024 ~ 2027</th>
+            <td>고려사이버대학교 (AI데이터과학 전공, 편입)</td>
+          </tr>
+          <tr>
+            <th>2026 ~ 2027</th>
+            <td>OZ코딩스쿨 AI헬스케어 부트캠프 과정</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- 내용이 생기면 주석을 풀어서 사용할 예정-->
+      <section id="awards">
+        <h2>Awards</h2>
+        <table class="education-table">
+          <tr>
+            <th>날짜</th>
+            <td>수상 내역</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <table class="education-table">
+          <tr>
+            <th>날짜</th>
+            <td>자격증 이름</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="resume_menu.js"></script>
+</body>
+</html>

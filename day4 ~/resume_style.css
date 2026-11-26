@@ -1,0 +1,467 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: left;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0 0 0 200px;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 40px;
+}
+
+.sidebar-container {
+    padding: 0 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    color: #007bff;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    min-height: calc(100vh - 80px);
+}
+
+
+#resume-header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 0;
+}
+
+#resume-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+    color: #222;
+}
+
+
+#resume-header .header-text span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    color: #666;
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+
+#resume-header .header-text i {
+    width: 18px;
+    text-align: center;
+    color: #555;
+    flex-shrink: 0;
+}
+
+
+#resume-header .header-text a,
+#resume-header .header-text a:link,
+#resume-header .header-text a:visited {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#resume-header .header-text a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+main h2 {
+    font-size: 1.5em;
+    border-left: 5px solid #333;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+
+.info-list {
+    list-style: none;
+    padding: 0 0 0 15px;
+    margin: 0 0 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 30px;
+    color: #444;
+}
+
+.info-list .label {
+    display: inline-block;
+    width: 80px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+.skills-group {
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.skills-group h3 {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #f0f2f5;
+    color: #476282;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.skill-tag:hover {
+    background-color: #476282;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+.experience-item {
+    margin-bottom: 25px;
+    padding: 0 0 20px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.experience-info .company {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #222;
+}
+
+.experience-info .period {
+    color: #888;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.experience-item .role {
+    margin-bottom: 10px;
+}
+
+.experience-item .position {
+    font-weight: 600;
+    color: #555;
+}
+
+.experience-item .rank {
+    font-weight: 500;
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #ddd;
+}
+
+.experience-item .details {
+    margin: 0;
+    padding-left: 20px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.experience-item .details li {
+    margin-bottom: 5px;
+}
+
+.project-tags {
+    margin-top: 12px;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-tags .tags-label {
+    font-size: 0.8em;
+    color: #999;
+    margin-right: 4px;
+}
+
+.project-tags .skill-tag {
+    background-color: transparent;  
+    border: 1px solid #d5dce5;       
+    color: #888;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 2px 10px;
+}
+
+.project-tags .skill-tag:hover {
+    background-color: transparent;
+    color: #476282;
+    transform: none;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.education-table th {
+    text-align: left;
+    width: 150px;
+    color: #888;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding: 10px 0 10px 15px;
+}
+
+.education-table td {
+    padding: 10px 0;
+    color: #444;
+    font-weight: 500;
+}
+
+
+
+
+/* =========================================================
+   반응형 — 아래는 PC(1025px 이상)에서는 적용되지 않습니다
+   ========================================================= */
+
+/* PC에서는 햄버거 바 숨김 */
+.mobile-bar {
+    display: none;
+}
+
+/* ---------- 태블릿 + 모바일 (1024px 이하) ---------- */
+@media (max-width: 1024px) {
+    body {
+        padding: 60px 0 0 0;          /* 왼쪽 200px 대신 위쪽 상단바 높이만큼 */
+    }
+
+    /* 왼쪽 사이드바 → 화면 위 상단바 */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .mobile-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .mobile-title {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+    }
+
+    .menu-toggle {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.4em;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    /* 메뉴는 기본으로 접혀 있다가 .open 이 붙으면 펼쳐짐 */
+    .sidebar-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+    }
+
+    .sidebar.open .sidebar-container {
+        max-height: 300px;
+    }
+
+    .sidebar-menu {
+        gap: 0;
+    }
+
+    .sidebar-menu li a {
+        display: block;
+        padding: 14px 20px;
+        border-top: 1px solid #444;
+    }
+
+    /* 상단바에 섹션 제목이 가려지지 않도록 */
+    section {
+        scroll-margin-top: 70px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 30px;
+        min-height: auto;
+    }
+}
+
+/* ---------- 모바일 (600px 이하) ---------- */
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+        padding: 24px 18px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* 사진을 위로, 연락처를 아래로 세로 배치 */
+    .header-content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    #resume-header h1 {
+        font-size: 1.9em;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #resume-header .header-text span {
+        white-space: normal;
+        word-break: break-all;
+    }
+
+    /* 프로필 2열 → 1열 */
+    .info-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* 라벨 | 값 두 칸으로 나눠서 긴 라벨(Place of Residence)에도 정렬 유지 */
+    .info-list li {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 10px;
+    }
+
+    .info-list .label {
+        width: auto;
+    }
+
+    /* 프로젝트 제목과 기간을 위아래로 */
+    .experience-info {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .experience-item .rank {
+        display: block;
+        margin: 4px 0 0 0;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .education-table th {
+        width: 100px;
+        padding-left: 0;
+        vertical-align: top;
+    }
+}
+
+/* ---------- PDF 내려받기(인쇄)할 때 메뉴 숨기기 ---------- */
+@media print {
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+        background: #fff;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+    }
+}
